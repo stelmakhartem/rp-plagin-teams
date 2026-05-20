@@ -1,11 +1,17 @@
 {
-  "scope": "plugin_name",
+  "scope": "teams_integration",
   "extensions": [
     {
       "name": "plugin",
-      "type": "uiExtension:settingsTab",
-      "title": "Plugin",
+      "type": "uiExtension:integrationSettings",
+      "title": "Teams",
       "moduleName": "./moduleName"
+    },
+    {
+      "name": "integrationFormFields",
+      "type": "uiExtension:integrationFormFields",
+      "title": "Teams",
+      "moduleName": "./integrationFormFields"
     }
   ]
 }

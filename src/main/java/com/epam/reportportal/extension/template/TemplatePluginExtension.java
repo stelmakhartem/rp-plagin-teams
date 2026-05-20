@@ -10,9 +10,7 @@ import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Map;
 import java.util.function.Supplier;
-import org.pf4j.Extension;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.stereotype.Service;
 
 /**
  * Use this extension class if you don't need to handle any events and create a default
@@ -20,8 +18,6 @@ import org.springframework.stereotype.Service;
  *
  * @author Reingold Shekhtel
  */
-@Extension
-@Service
 public class TemplatePluginExtension implements ReportPortalExtensionPoint {
 
   private final Supplier<Map<String, PluginCommand>> pluginCommandMapping = new MemoizingSupplier<>(

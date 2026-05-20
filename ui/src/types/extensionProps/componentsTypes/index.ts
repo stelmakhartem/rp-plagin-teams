@@ -33,6 +33,10 @@ interface FieldErrorHintInterface {
 interface FieldTextInterface {
   maxLength?: number;
   defaultWidth?: boolean;
+  value?: string;
+  onChange?: (e: React.ChangeEvent<HTMLInputElement>) => void;
+  onBlur?: React.FocusEventHandler;
+  onFocus?: React.FocusEventHandler;
 }
 
 interface BtsAuthFieldsInfo {

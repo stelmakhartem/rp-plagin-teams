@@ -110,6 +110,7 @@ const config = {
       },
       exposes: {
         './moduleName': './src/components/moduleName',
+        './integrationFormFields': './src/components/integrationFormFields',
       },
     }),
     new CopyPlugin({

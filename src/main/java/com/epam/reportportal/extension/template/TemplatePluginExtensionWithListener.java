@@ -33,7 +33,7 @@ import org.springframework.stereotype.Service;
 @Extension
 @Service
 public class TemplatePluginExtensionWithListener implements ReportPortalExtensionPoint, DisposableBean {
-  private static final String PLUGIN_ID = "template";
+  private static final String PLUGIN_ID = "teams_integration";
 
   private final Supplier<Map<String, PluginCommand>> pluginCommandMapping = new MemoizingSupplier<>(
       this::getCommands);
